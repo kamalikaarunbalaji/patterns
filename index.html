@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <script>
+
+        //STAR
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                document.writeln("*")
+            }
+            document.writeln("<br>")
+        }
+
+        // S
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if (i == 2 && (j == 2 || j == 3 || j == 4 || j == 5)) {
+                    document.writeln("&nbsp;&nbsp;")
+                }
+                else if (i == 4 && (j == 1 || j == 2 || j == 3 || j == 4)) {
+                    document.writeln("&nbsp;&nbsp;")
+                } else {
+                    document.writeln("*")
+                }
+            }
+            document.writeln("<br>")
+        }
+
+        //NINE
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if (i == 2 && (j == 2 || j == 3 || j == 4)) {
+                    document.writeln("&nbsp;&nbsp;")
+                }
+                else if (i == 4 && (j == 1 || j == 2 || j == 3 || j == 4)) {
+                    document.writeln("&nbsp;&nbsp;")
+                } else {
+                    document.writeln("*")
+                }
+            }
+            document.writeln("<br>")
+        }
+
+        // EIGHT
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if (i == 2 && (j == 2 || j == 3 || j == 4)) {
+                    document.writeln("&nbsp;&nbsp;")
+                }
+                else if (i == 4 && (j == 2 || j == 3 || j == 4)) {
+                    document.writeln("&nbsp;&nbsp;")
+                } else {
+                    document.writeln("*")
+                }
+            }
+            document.writeln("<br>")
+        }
+
+    </script>
+</body>
+
+</html>
